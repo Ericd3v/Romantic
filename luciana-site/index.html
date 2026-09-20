@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Meu bem.exe ❤️ — para Luciana Fiaux</title>
+  <meta name="description" content="Um site bobão, feito com carinho, para a Luciana.">
+  <meta name="theme-color" content="#06060b">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Fontes opcionais (Google Fonts). Se estiver offline, o site usa as fontes de reserva definidas no CSS. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Emoji como favicon (não precisa de arquivo) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#abertura">Pular para o conteúdo</a>
+
+  <!-- Camadas de atmosfera: o site vai esquentando conforme você desce -->
+  <div class="atmosphere" aria-hidden="true">
+    <div class="atmosphere__cold"></div>
+    <div class="atmosphere__warm"></div>
+  </div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+  <div id="fx" class="fx-layer" aria-hidden="true"></div>
+
+  <noscript>
+    <p class="noscript">Este site usa JavaScript para as interações. Ative o JavaScript para ver tudo, meu bem. ❤️</p>
+  </noscript>
+
+  <!-- ================= CABEÇALHO ================= -->
+  <header class="topbar">
+    <a class="brand" href="#abertura" aria-label="Voltar ao início">meu bem<span>.exe</span></a>
+
+    <nav class="topnav" aria-label="Seções do site">
+      <a href="#abertura">Início</a>
+      <a href="#encontro">Encontro</a>
+      <a href="#encantos">Encantos</a>
+      <a href="#galeria">Fotos</a>
+      <a href="#declaracao">Carta</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#chale">Chalé</a>
+    </nav>
+
+    <div class="music">
+      <button id="musicBtn" class="music__btn" type="button" aria-pressed="false" aria-label="Tocar música">
+        <span class="music__icon" aria-hidden="true">♪</span>
+        <span id="musicLabel" class="music__label">Música</span>
+      </button>
+      <span id="musicStatus" class="music__status" role="status" aria-live="polite"></span>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ================= SEÇÃO 1 — ABERTURA ================= -->
+    <section id="abertura" class="section hero" aria-labelledby="hero-title">
+      <div class="wrap wrap--narrow">
+        <div class="dossier" id="dossier">
+          <div class="dossier__bar">
+            <span class="dossier__lock" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="11" width="14" height="9" rx="2"></rect>
+                <path class="lock-shackle" d="M8 11V8a4 4 0 0 1 8 0v3"></path>
+              </svg>
+            </span>
+            <p class="dossier__stamp">⚠️ ARQUIVO CONFIDENCIAL</p>
+          </div>
+
+          <h1 id="hero-title" class="hero__title">Meu bem, precisamos conversar sobre um problema.</h1>
+
+          <div class="log">
+            <p class="log__line">Desde que você apareceu, meu sistema de pensamentos tem apresentado comportamentos estranhos.</p>
+            <p class="log__line log__line--flag"><span class="log__tag">detectado</span> Sorriso.</p>
+            <p class="log__line log__line--flag"><span class="log__tag">comprometedor</span> Olhar.</p>
+            <p class="log__line log__line--flag"><span class="log__tag">perigosa</span> Animação contando histórias, em nível absoluto.</p>
+            <p class="log__line log__line--suspect">Suspeita principal: <strong>Luciana Fiaux</strong> ❤️</p>
+          </div>
+
+          <div class="dossier__actions">
+            <button id="investigateBtn" class="btn btn--primary" type="button">Investigar esse caso 🔍</button>
+            <p id="scanStatus" class="scan" role="status" aria-live="polite"></p>
+          </div>
+
+          <div id="diagnosis" class="diagnosis" hidden>
+            <p class="diagnosis__title">Diagnóstico preliminar</p>
+            <p>Você tem ocupado espaço demais nos meus pensamentos.</p>
+            <p>E o pior: eu nem estou tentando resolver. 😂</p>
+            <button id="continueBtn" class="btn btn--ghost" type="button">Continuar a leitura ↓</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SEÇÃO 2 — PRIMEIRO ENCONTRO ================= -->
+    <section id="encontro" class="section" aria-labelledby="encontro-title">
+      <div class="wrap wrap--narrow">
+        <h2 id="encontro-title" class="section__title">01 de agosto de 2026: o começo de uma história</h2>
+
+        <div class="prose">
+          <p>Tudo começou em um shopping.</p>
+          <p>Um lugar aparentemente comum, com pessoas andando, vitrines e aquela correria de sempre.</p>
+          <p>Mas, em algum momento, aquele dia ganhou um significado especial.</p>
+          <p>E agora existe uma data que merece um cantinho neste site.</p>
+          <p class="date-mark">01.08.2026 ❤️</p>
+        </div>
+
+        <div class="counter" role="group" aria-label="Tempo desde o primeiro encontro">
+          <div class="counter__cell"><span id="cd-days" class="counter__num">0</span><span class="counter__label">dias</span></div>
+          <div class="counter__cell"><span id="cd-hours" class="counter__num">00</span><span class="counter__label">horas</span></div>
+          <div class="counter__cell"><span id="cd-minutes" class="counter__num">00</span><span class="counter__label">minutos</span></div>
+          <div class="counter__cell"><span id="cd-seconds" class="counter__num">00</span><span class="counter__label">segundos</span></div>
+        </div>
+        <p id="cd-note" class="counter__note" hidden></p>
+
+        <div class="prose prose--after">
+          <p>Desde aquele dia, o calendário continuou andando.</p>
+          <p>E eu continuo achando que conhecer você foi uma ideia muito boa. ❤️</p>
+          <p class="aside">Observação: o shopping não será responsabilizado pelos efeitos colaterais dessa história. 😂</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SEÇÃO 3 — O QUE ENCANTA ================= -->
+    <section id="encantos" class="section" aria-labelledby="encantos-title">
+      <div class="wrap">
+        <h2 id="encantos-title" class="section__title">Três coisas que complicam minha tentativa de agir normalmente</h2>
+        <p class="section__hint">Toque em cada uma para ler.</p>
+
+        <div class="traits">
+          <article class="trait">
+            <button class="trait__btn" type="button" aria-expanded="false" aria-controls="trait-1">
+              <span class="trait__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"></circle><path d="M15 27c2.5 5 15.5 5 18 0"></path><circle cx="18" cy="19" r="1" fill="currentColor"></circle><circle cx="30" cy="19" r="1" fill="currentColor"></circle></svg>
+              </span>
+              <span class="trait__title">O sorriso.</span>
+              <span class="trait__cue" aria-hidden="true">ler</span>
+            </button>
+            <div id="trait-1" class="trait__panel" role="region">
+              <div class="trait__inner">
+                <p>Tem um problema sério no seu sorriso.</p>
+                <p>Ele aparece e, de repente, eu esqueço o que estava pensando.</p>
+                <p>Já considerei reclamar, mas acho que vou continuar olhando mesmo. 😂❤️</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="trait">
+            <button class="trait__btn" type="button" aria-expanded="false" aria-controls="trait-2">
+              <span class="trait__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 24c5-9 12-13 20-13s15 4 20 13c-5 9-12 13-20 13S9 33 4 24z"></path><circle cx="24" cy="24" r="6"></circle><circle cx="24" cy="24" r="1.5" fill="currentColor"></circle></svg>
+              </span>
+              <span class="trait__title">O olhar.</span>
+              <span class="trait__cue" aria-hidden="true">ler</span>
+            </button>
+            <div id="trait-2" class="trait__panel" role="region">
+              <div class="trait__inner">
+                <p>Seu olhar tem um negócio que eu ainda não consegui explicar direito.</p>
+                <p>Às vezes eu acho que você nem percebe o efeito que ele causa.</p>
+                <p>E, sinceramente, talvez seja melhor continuar assim. ❤️</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="trait">
+            <button class="trait__btn" type="button" aria-expanded="false" aria-controls="trait-3">
+              <span class="trait__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 10h32a3 3 0 0 1 3 3v18a3 3 0 0 1-3 3H22l-9 8v-8H8a3 3 0 0 1-3-3V13a3 3 0 0 1 3-3z"></path><path d="M14 19h20M14 26h12"></path></svg>
+              </span>
+              <span class="trait__title">A maneira como você conta as coisas.</span>
+              <span class="trait__cue" aria-hidden="true">ler</span>
+            </button>
+            <div id="trait-3" class="trait__panel" role="region">
+              <div class="trait__inner">
+                <p>Uma das coisas que eu mais gosto é ver você se animando quando conta algo.</p>
+                <p>O jeito que você se envolve, explica, se empolga e dá vida à história.</p>
+                <p>Eu poderia até fingir que estou prestando atenção só no assunto...</p>
+                <p>Mas às vezes estou prestando atenção em você. ❤️</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SEÇÃO 4 — GALERIA ================= -->
+    <section id="galeria" class="section" aria-labelledby="galeria-title">
+      <div class="wrap">
+        <h2 id="galeria-title" class="section__title">Registros da minha pessoa favorita de perturbar</h2>
+        <ul id="gallery" class="gallery" aria-label="Galeria de fotos"></ul>
+      </div>
+    </section>
+
+    <!-- ================= SEÇÃO 5 — DECLARAÇÃO ================= -->
+    <section id="declaracao" class="section section--center" aria-labelledby="declaracao-title">
+      <div class="wrap wrap--narrow">
+        <h2 id="declaracao-title" class="section__title">Meu bem, tem uma coisa que eu queria te falar...</h2>
+        <button id="openLetter" class="btn btn--primary btn--xl" type="button" aria-haspopup="dialog">Abrir declaração ❤️</button>
+        <p id="letterAgain" class="section__hint" hidden>Pode abrir de novo quantas vezes quiser.</p>
+      </div>
+    </section>
+
+    <!-- ================= SEÇÃO 6 — QUIZ ================= -->
+    <section id="quiz" class="section" aria-labelledby="quiz-title">
+      <div class="wrap wrap--narrow">
+        <h2 id="quiz-title" class="section__title">Teste oficial: quanto você já conhece esse cara? 😂</h2>
+        <p class="section__hint">Um quiz sem validade científica, mas com intenções suspeitas.</p>
+
+        <div class="quiz" id="quizBox">
+          <div class="quiz__top">
+            <span id="quizCount" class="quiz__count">Pergunta 1 de 5</span>
+            <div id="quizBar" class="quiz__bar" role="progressbar" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0" aria-label="Progresso do quiz">
+              <span id="quizFill"></span>
+            </div>
+          </div>
+          <div id="quizStage" class="quiz__stage" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SEÇÃO 9 — MENSAGENS SURPRESA ================= -->
+    <section id="surpresas" class="section" aria-labelledby="surpresas-title">
+      <div class="wrap">
+        <h2 id="surpresas-title" class="section__title">Botões que eu não deveria ter deixado aqui</h2>
+
+        <div class="surprises">
+          <div class="surprise">
+            <button id="surpriseBtn" class="btn btn--ghost" type="button">Preciso te contar uma coisa...</button>
+            <p id="surpriseOut" class="surprise__out" role="status" aria-live="polite"></p>
+          </div>
+
+          <div class="surprise">
+            <button id="carinhoBtn" class="btn btn--ghost" type="button">Enviar carinho digital ❤️</button>
+            <p id="carinhoOut" class="surprise__out" role="status" aria-live="polite"></p>
+          </div>
+
+          <div class="surprise">
+            <button id="saudadeBtn" class="btn btn--ghost" type="button">Verificar nível de saudade</button>
+            <div id="saudadeMeter" class="meter" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Nível de saudade (só de brincadeira)"><span id="saudadeFill"></span></div>
+            <p id="saudadeOut" class="surprise__out" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SEÇÃO 7 — DISTÂNCIA ================= -->
+    <!-- Para ocultar esta seção: CONFIG.showDistanceSection = false no script.js -->
+    <section id="distancia" class="section section--center" aria-labelledby="distancia-title">
+      <div class="wrap wrap--narrow">
+        <h2 id="distancia-title" class="section__title">Um pouquinho de distância, um tanto de vontade de estar perto</h2>
+
+        <div class="link-art" aria-hidden="true">
+          <svg viewBox="0 0 600 160" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <radialGradient id="glowL" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffd6a0"></stop><stop offset="1" stop-color="#ffd6a0" stop-opacity="0"></stop></radialGradient>
+              <radialGradient id="glowR" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#f3a3b0"></stop><stop offset="1" stop-color="#f3a3b0" stop-opacity="0"></stop></radialGradient>
+              <linearGradient id="thread" x1="0" x2="1"><stop offset="0" stop-color="#ffd6a0"></stop><stop offset="1" stop-color="#f3a3b0"></stop></linearGradient>
+            </defs>
+            <circle class="orb orb--l" cx="70" cy="80" r="46" fill="url(#glowL)"></circle>
+            <circle cx="70" cy="80" r="7" fill="#ffe7c7"></circle>
+            <circle class="orb orb--r" cx="530" cy="80" r="46" fill="url(#glowR)"></circle>
+            <circle cx="530" cy="80" r="7" fill="#ffd5db"></circle>
+            <path class="thread" d="M80 80 C 200 40, 400 120, 520 80" stroke="url(#thread)" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="6 8"></path>
+            <g class="mid-heart" transform="translate(300 80)">
+              <path d="M0 8 C -18 -6, -10 -20, 0 -10 C 10 -20, 18 -6, 0 8 Z" fill="#e58a99"></path>
+            </g>
+          </svg>
+        </div>
+
+        <div class="prose">
+          <p>Nem sempre dá para estar pertinho.</p>
+          <p>Mas tem gente que consegue aparecer nos pensamentos mesmo quando está longe.</p>
+          <p>E você, meu bem, tem feito isso com uma frequência considerável. ❤️</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SEÇÃO 8 — CHALÉ ================= -->
+    <section id="chale" class="section chalet" aria-labelledby="chale-title">
+      <div class="chalet__sky" aria-hidden="true"></div>
+      <div class="fireflies" id="fireflies" aria-hidden="true"></div>
+
+      <div class="wrap">
+        <h2 id="chale-title" class="section__title">Agora, uma ideia para o próximo capítulo...</h2>
+
+        <figure class="scene" aria-label="Ilustração: um chalé no meio do mato, com luz quente na janela, uma rede na varanda, um livro e uma taça de vinho">
+          <svg viewBox="0 0 800 420" role="img" aria-labelledby="scene-title scene-desc">
+            <title id="scene-title">Chalé à noite</title>
+            <desc id="scene-desc">Um chalé de madeira no meio de pinheiros, com a janela acesa, uma rede na varanda, um livro aberto e uma taça de vinho.</desc>
+            <defs>
+              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#070b1a"></stop>
+                <stop offset="0.6" stop-color="#1a1230"></stop>
+                <stop offset="1" stop-color="#3a1a25"></stop>
+              </linearGradient>
+              <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#fff3d6" stop-opacity=".55"></stop><stop offset="1" stop-color="#fff3d6" stop-opacity="0"></stop></radialGradient>
+              <radialGradient id="windowGlow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffb066" stop-opacity=".75"></stop><stop offset="1" stop-color="#ffb066" stop-opacity="0"></stop></radialGradient>
+              <linearGradient id="windowLight" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd08a"></stop><stop offset="1" stop-color="#ff9448"></stop></linearGradient>
+            </defs>
+
+            <rect width="800" height="420" fill="url(#sky)"></rect>
+
+            <circle cx="640" cy="80" r="70" fill="url(#moonGlow)"></circle>
+            <circle cx="640" cy="80" r="24" fill="#fff0cf"></circle>
+            <circle cx="650" cy="74" r="22" fill="#1a1230" opacity=".18"></circle>
+
+            <g fill="#fff" class="stars">
+              <circle cx="60" cy="50" r="1.3"></circle><circle cx="130" cy="110" r="1"></circle><circle cx="210" cy="40" r="1.4"></circle>
+              <circle cx="300" cy="90" r="1"></circle><circle cx="380" cy="30" r="1.2"></circle><circle cx="460" cy="70" r="1"></circle>
+              <circle cx="530" cy="35" r="1.3"></circle><circle cx="740" cy="130" r="1"></circle><circle cx="90" cy="170" r="1"></circle>
+              <circle cx="420" cy="140" r="1"></circle><circle cx="720" cy="40" r="1.2"></circle>
+            </g>
+
+            <path d="M0 300 C 120 250, 220 280, 330 260 C 450 238, 560 290, 800 250 L800 420 L0 420 Z" fill="#141a2b"></path>
+            <path d="M0 340 C 160 310, 300 330, 420 315 C 560 298, 680 335, 800 315 L800 420 L0 420 Z" fill="#0d1220"></path>
+
+            <g fill="#0a0f1c">
+              <polygon points="40,330 70,240 100,330"></polygon>
+              <polygon points="75,340 110,225 145,340"></polygon>
+              <polygon points="130,335 158,255 186,335"></polygon>
+              <polygon points="640,335 672,235 704,335"></polygon>
+              <polygon points="690,340 725,220 760,340"></polygon>
+              <polygon points="745,335 775,255 805,335"></polygon>
+            </g>
+
+            <ellipse cx="340" cy="345" rx="230" ry="26" fill="#ffb066" opacity=".08"></ellipse>
+
+            <g>
+              <rect x="230" y="255" width="230" height="95" fill="#3b2419"></rect>
+              <g stroke="#2a1911" stroke-width="2"><line x1="230" y1="275" x2="460" y2="275"></line><line x1="230" y1="295" x2="460" y2="295"></line><line x1="230" y1="315" x2="460" y2="315"></line><line x1="230" y1="335" x2="460" y2="335"></line></g>
+              <polygon points="215,258 345,185 475,258" fill="#231410"></polygon>
+
+              <circle class="window-glow" cx="300" cy="298" r="70" fill="url(#windowGlow)"></circle>
+              <rect class="window" x="272" y="278" width="56" height="42" rx="3" fill="url(#windowLight)"></rect>
+              <g stroke="#3b2419" stroke-width="3"><line x1="300" y1="278" x2="300" y2="320"></line><line x1="272" y1="299" x2="328" y2="299"></line></g>
+
+              <rect x="385" y="290" width="44" height="60" rx="3" fill="#20130e"></rect>
+              <circle cx="421" cy="322" r="2" fill="#c9a55f"></circle>
+
+              <rect x="210" y="345" width="270" height="8" fill="#2a1911"></rect>
+              <rect x="215" y="353" width="8" height="30" fill="#2a1911"></rect>
+              <rect x="467" y="353" width="8" height="30" fill="#2a1911"></rect>
+            </g>
+
+            <g>
+              <rect x="500" y="300" width="8" height="82" fill="#2a1911"></rect>
+              <rect x="600" y="300" width="8" height="82" fill="#2a1911"></rect>
+              <g class="hammock">
+                <path d="M508 318 C 530 372, 580 372, 600 318" fill="none" stroke="#c98a6b" stroke-width="5" stroke-linecap="round"></path>
+                <path d="M514 322 C 534 362, 574 362, 594 322" fill="none" stroke="#e0a98a" stroke-width="2" stroke-linecap="round" opacity=".7"></path>
+                <g transform="translate(538 342) rotate(-8)">
+                  <path d="M0 0 L14 -4 L28 0 L28 6 L14 2 L0 6 Z" fill="#f4ece7"></path>
+                  <line x1="14" y1="-4" x2="14" y2="2" stroke="#7a1a33" stroke-width="1.5"></line>
+                </g>
+              </g>
+            </g>
+
+            <g transform="translate(480 300)">
+              <rect x="0" y="34" width="26" height="4" rx="2" fill="#3b2419"></rect>
+              <rect x="11" y="38" width="4" height="44" fill="#3b2419"></rect>
+              <path d="M6 10 h14 c0 12 -3 20 -7 20 s-7 -8 -7 -20 z" fill="#8c1f3d" opacity=".9"></path>
+              <path d="M6 10 h14" stroke="#e3a5ac" stroke-width="1.2"></path>
+              <line x1="13" y1="30" x2="13" y2="34" stroke="#e3a5ac" stroke-width="1.5"></line>
+              <line x1="8" y1="34" x2="18" y2="34" stroke="#e3a5ac" stroke-width="1.5"></line>
+            </g>
+
+            <path class="smoke" d="M405 190 C 395 170, 420 160, 410 138" fill="none" stroke="#f4ece7" stroke-width="3" stroke-linecap="round" opacity=".18"></path>
+            <rect x="398" y="188" width="16" height="30" fill="#231410"></rect>
+          </svg>
+        </figure>
+
+        <div class="prose prose--warm">
+          <p>Imagina só, meu bem...</p>
+          <p>Um chalé no meio do mato.</p>
+          <p>Um pouco de frio, se o clima colaborar.</p>
+          <p>Uma taça de vinho.</p>
+          <p>Um livro aberto.</p>
+          <p>Uma rede para ler sem pressa.</p>
+          <p>E aquela paz de não precisar correr para lugar nenhum.</p>
+          <p>Só aproveitar o momento, conversar, rir de alguma coisa boba e ficar ali.</p>
+          <p>Acho que seria um ótimo cenário para mais uma lembrança nossa. ❤️</p>
+          <p class="aside">Observação técnica: a capacidade de ler o livro pode ser comprometida caso você comece a contar alguma história e eu fique prestando atenção em você, serei obrigado a te atacar. 😂</p>
+        </div>
+
+        <div class="invite">
+          <h3 class="invite__title">Então, meu bem... que tal a gente tornar essa ideia realidade?</h3>
+          <div class="invite__actions">
+            <button id="planBtn" class="btn btn--warm btn--xl" type="button" aria-expanded="false" aria-controls="planPanel">Bora planejar esse chalé ❤️</button>
+            <button id="talkBtn" class="btn btn--ghost btn--xl" type="button" aria-expanded="false" aria-controls="talkPanel">Quero conversar sobre isso 💬</button>
+          </div>
+
+          <!-- Painel: planejar -->
+          <div id="planPanel" class="panel" hidden>
+            <div class="panel__glow" aria-hidden="true"></div>
+            <div class="panel__body">
+              <div class="prose prose--warm prose--tight">
+                <p><strong>Então temos uma missão:</strong></p>
+                <p>Encontrar um chalé bonito, escolher um vinho, levar um livro e descobrir se a gente consegue passar alguns minutos na rede sem começar a rir de alguma bobagem. 😂❤️</p>
+                <p>O resto a gente combina juntos.</p>
+              </div>
+
+              <p class="panel__note">Se quiser, preencha o que já sabe. Nada aqui é enviado automaticamente: você só copia a mensagem e manda como preferir. Tudo é opcional.</p>
+
+              <form id="planForm" class="plan" autocomplete="off">
+                <div class="field">
+                  <label for="planDate">Data desejada</label>
+                  <input id="planDate" name="date" type="date">
+                </div>
+                <div class="field">
+                  <label for="planPeriod">Período preferido</label>
+                  <select id="planPeriod" name="period">
+                    <option value="">Ainda não sei</option>
+                    <option value="manhã">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                    <option value="um fim de semana inteiro">Fim de semana inteiro</option>
+                  </select>
+                </div>
+                <div class="field field--full">
+                  <label for="planIdeas">Ideias para o passeio</label>
+                  <textarea id="planIdeas" name="ideas" rows="3" placeholder="Ex.: algo tranquilo, com tempo para conversar..."></textarea>
+                </div>
+              </form>
+
+              <div class="field field--full">
+                <label for="planMessage">Mensagem pronta (dá para editar)</label>
+                <textarea id="planMessage" rows="6"></textarea>
+              </div>
+
+              <div class="panel__actions">
+                <button id="copyPlan" class="btn btn--warm" type="button">Copiar mensagem</button>
+                <span id="copyStatus" class="copy-status" role="status" aria-live="polite"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Painel: conversar -->
+          <div id="talkPanel" class="panel" hidden>
+            <div class="panel__body">
+              <div class="prose prose--warm prose--tight">
+                <p>Sem pressa e sem obrigação nenhuma, meu bem.</p>
+                <p>Se quiser pensar, conversar ou só me responder do seu jeito, eu vou gostar do mesmo jeito. A ideia é só te deixar à vontade.</p>
+              </div>
+              <div class="field field--full">
+                <label for="talkMessage">Se ajudar, aqui vai uma mensagem pronta (dá para editar)</label>
+                <textarea id="talkMessage" rows="3"></textarea>
+              </div>
+              <div class="panel__actions">
+                <button id="copyTalk" class="btn btn--ghost" type="button">Copiar mensagem</button>
+                <span id="copyTalkStatus" class="copy-status" role="status" aria-live="polite"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p id="footerText">Feito com carinho, com uns bugs propositais e nenhuma pressa. ❤️</p>
+  </footer>
+
+  <!-- ================= MODAL — CARTA ================= -->
+  <div id="letterModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="letterTitle" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel letter" tabindex="-1">
+      <button class="modal__close" type="button" data-close aria-label="Fechar a carta">✕</button>
+      <h2 id="letterTitle" class="visually-hidden">Carta para a Luciana</h2>
+      <div id="letterBody" class="letter__body"></div>
+      <button class="btn btn--ghost letter__done" type="button" data-close>Fechar carta</button>
+    </div>
+  </div>
+
+  <!-- ================= LIGHTBOX ================= -->
+  <div id="lightbox" class="modal modal--dark" role="dialog" aria-modal="true" aria-label="Visualizador de fotos" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="lightbox__stage" tabindex="-1">
+      <button class="modal__close" type="button" data-close aria-label="Fechar visualizador">✕</button>
+      <button id="lbPrev" class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Foto anterior">‹</button>
+      <figure class="lightbox__figure">
+        <img id="lbImg" alt="" src="">
+        <figcaption id="lbCaption"></figcaption>
+      </figure>
+      <button id="lbNext" class="lightbox__nav lightbox__nav--next" type="button" aria-label="Próxima foto">›</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
